@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <button onclick="alert('hello users')">click</button>
+    <button onclick="show()">click</button>-->
+    <button>click</button> 
+    <script>
+      /*
+      function show()
+       {
+        alert("welcome")
+       }
+       var result=document.querySelector("button")
+       result.onclick=function data()
+       {
+        alert("function called")
+       }
+       */
+
+       function fun()
+       {
+        alert("fun called")
+       }
+       var result=document.querySelector("button")
+       result.addEventListener("click",fun)
+    </script>
+</body>
+</html>

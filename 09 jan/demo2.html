@@ -1,0 +1,72 @@
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        #a {
+            font-size: 90px;
+            text-decoration: none;
+            position: absolute;
+            top: 220px;
+            left: 93.5%;
+        }
+
+        #b {
+            font-size: 90px;
+            text-decoration: none;
+            position: absolute;
+            top: 220px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="pic5.jpg" height="500px" width="100%" id="myimage">
+    </div>
+    <button id="a" onclick="slider()">&gt;</button>
+    <button id="b" onclick="slider1()">&lt;</button>
+    <script>
+
+        var arr = ['pic1.jpg', 'pic2.jpg', 'pic3.jpg', 'pic4.jpg', 'pic5.jpg'];
+        var i = 0
+        function slider() {
+            document.getElementById("myimage").src = arr[i]
+            i++
+            if (i > 4) {
+                i = 0
+            }
+        }
+            function  slider1() {
+                document.getElementById("myimage").src = arr[i]
+                i--
+                if (i < 0 ) {
+                    i = 0
+                }
+
+            }
+        
+        setTimeout(slider, 2000)
+
+
+
+
+
+
+        /*
+        var arr=['pic1.jpg','pic2.jpg','pic3.jpg','pic4.jpg','pic5.jpg'];
+        var i=0
+        function slider(){
+        document.getElementById("myimage").src=arr[i]  
+        i++ 
+        if(i>4){
+            i=0
+        }
+        }
+        setInterval(slider,1000);
+        */
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+
+    <title>Document</title>
+    <style>
+#btn{margin-left: 400px;}
+    </style>
+</head>
+<body>
+    <button onclick="opnwin()">open Win</button>
+    <button id="btn" onclick="movewin()">Move Win</button>
+
+<script>
+    var data;
+function opnwin(){
+    // window.open()
+    // window.open("https://www.google.com")
+    // window.open("https://www.google.com","self","height=200px, width=300px")
+    data=  window.open("","self","height=200px, width=200px")
+}
+function movewin(){
+    // data.moveTo(200,200)
+    data.moveBy(200,200)
+    data.focus()
+}
+</script>
+
+</body>
+</html>

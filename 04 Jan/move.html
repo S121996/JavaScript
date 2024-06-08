@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btn{
+            margin-left: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="opnwin()">Open win</button>
+    <button id="btn" onclick="movewin()">Move Win</button>
+    <script>
+        var data;
+        function opnwin()
+        {
+            data=window.open("","self","height=200px ,width=200px")
+        }
+        function movewin()
+        {
+            // data.moveTo(200.200)
+            data.moveBy(200.200)
+            data.focus()
+        }
+    </script>
+</body>
+</html>

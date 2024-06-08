@@ -1,0 +1,48 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            padding: 10px;
+            border: solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="a">1
+        <div id="b">2
+            <div id="c">3
+                <div id="d">4</div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function fun() {
+            console.log("1")
+        }
+        function fun1() {
+            console.log("2")
+
+        }
+        function fun2() {
+            console.log("3")
+
+        }
+        function fun3() {
+            console.log("4")
+
+        }
+        document.getElementById("a").addEventListener("click", fun,true)
+        document.getElementById("b").addEventListener("click", fun1,true)
+        document.getElementById("c").addEventListener("click", fun2,true)
+        document.getElementById("d").addEventListener("click", fun3,true)
+
+
+    </script>
+</body>
+
+</html>

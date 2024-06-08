@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <img src="../pic1.jpg" height="500px" width="100%" id="myimage">
+    </div>
+    <script>
+        var arr=['../pic1.jpg','../pic2.jpg','../pic3.jpg','../pic4.jpg','../pic5.jpg'];
+        var i=0
+        function slider(){
+            document.getElementById("myimage").src=arr[i]
+            i++
+            if(i>4){
+                i=0
+            }
+        }
+        setInterval(slider,1000)
+    </script>
+</body>
+</html>

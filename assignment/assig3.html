@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        #bg{height: 300px; width: 300px; border: 2px solid ;}
+        #fg{height: 300px; width: 300px; border: 2px solid; position: absolute; top: 10px; left: 320px;}
+    </style>
+</head>
+<body>
+    <div id="bg"></div>
+    <div id="fg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, ea. Suscipit obcaecati quam facere sed nihil natus accusamus repellendus, fugit dolorem dolor, exercitationem quibusdam molestiae quaerat, sunt ex. Doloremque libero reprehenderit repellat ex harum accusantium labore sapiente inventore sit iusto?</div>
+    <button onclick="bg()">bgcolor</button>
+    <button onclick="fg()">fgcolor</button>
+    <script>
+        function bg(){
+            var data=document.getElementById("bg")
+            data.style.backgroundColor="blue"
+        }
+        function fg(){
+            var result=document.getElementById("fg")
+            result.style.color="red"
+        }
+    </script>
+</body>
+</html>

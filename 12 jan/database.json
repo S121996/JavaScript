@@ -1,0 +1,25 @@
+{
+    "Products": [
+        {
+            "id": "1",
+            "name": "smart Mobile",
+            "price":58000,
+            "category":"mobile",
+            "pimage":"Product/m1.jpg"
+        },
+        {
+            "id": "2",
+            "name": "smart Mobile",
+            "price":52000,
+            "category":"mobile",
+            "pimage":"Product/m2.jpg"
+        },
+        {
+            "id": "3",
+            "name": "Shirt",
+            "price":1800,
+            "category":"shirt",
+            "pimage":"Product/s1.jpg"
+        }
+    ]
+}

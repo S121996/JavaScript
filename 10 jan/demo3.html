@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="filterdata('mobile')">Mobile</button>
+    <button onclick="filterdata('shirt')">Shirt</button>
+    <button onclick="filterdata('watch')">Watch</button>
+   <div>
+    <br>
+    <script>
+var obj=[
+{id:1,pname:"Smart Mobile",price:35000,pimage:"image/m1.jpg",category:"mobile"},
+{id:2,pname:"Smart Mobile",price:25000,pimage:"image/m2.jpg",category:"mobile"},
+{id:3,pname:"Shirt",price:1500,pimage:"image/s1.jpg",category:"shirt"},
+{id:4,pname:"Shirt",price:800,pimage:"image/s2.jpg",category:"shirt"},
+{id:5,pname:"Smart Watch",price:5500,pimage:"image/w1.jpg",category:"watch"},
+{id:6,pname:"Smart Watch",price:3500,pimage:"image/w5.jpg",category:"watch"},
+]
+ obj.map((item)=>{
+document.write("<img src="+item.pimage+"><h2>"+item.pname+"</h2><p>"+item.price+"</p><p>"+item.category+"</p>")
+ })
+
+function filterdata(cat){
+var fdata=obj.filter((item)=>{
+return cat===item.category
+})
+fdata.map((item)=>{
+document.write("<img src="+item.pimage+"><h2>"+item.pname+"</h2><p>"+item.price+"</p><p>"+item.category+"</p>")
+ })
+
+}
+
+
+
+    </script>
+   </div> 
+</body>
+</html>

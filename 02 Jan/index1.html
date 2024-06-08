@@ -1,0 +1,129 @@
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+<ol>
+    <li>Home</li>
+    <li>About</li>
+    <li>News</li>
+    <li id="mylist">Contact</li>
+    <li>Services</li>
+
+</ol>
+
+    <script>
+var parent=document.querySelector("ol")
+var refele=document.getElementById("mylist")
+var ele=document.createElement("li")
+ele.textContent="ducat"
+parent.insertBefore(ele,refele)
+console.log(parent);
+
+
+
+
+
+        /*
+var parent=document.querySelector("div")
+var ele1=document.createElement("h1")
+var ele2=document.createElement("h2")
+var ele3=document.createElement("h3")
+var ele4=document.createElement("h4")
+var ele5=document.createElement("h5")
+var ele6=document.createElement("h6")
+var ele7=document.createElement("p")
+ele1.textContent="this is heading one"
+ele2.textContent="this is heading two"
+ele3.textContent="this is heading three"
+ele4.textContent="this is heading four"
+ele5.textContent="this is heading five"
+ele6.textContent="this is heading six"
+ele7.textContent="this is para"
+var df=document.createDocumentFragment()
+df.appendChild(ele1)
+df.appendChild(ele2)
+df.appendChild(ele3)
+df.appendChild(ele4)
+df.appendChild(ele5)
+df.appendChild(ele6)
+df.appendChild(ele7)
+parent.appendChild(df)
+console.log(parent);
+
+*/ 
+
+
+
+
+
+
+
+
+
+
+/*
+var mydiv=document.querySelector("div")
+var ele=document.createElement("h2")
+var txt1=document.createTextNode("this is heading two")
+var txt2=document.createTextNode(" this is another data")
+ele.appendChild(txt1)
+ele.appendChild(txt2)
+ele.normalize()
+mydiv.appendChild(ele)
+console.log(mydiv);
+
+
+var mydiv=document.querySelector("div")
+var ele=document.createElement("h2")
+ele.textContent="this is heading two"
+
+mydiv.appendChild(ele)
+console.log(mydiv);
+*/ 
+
+
+
+
+
+
+        /*
+var result=document.createElement("h1")
+var data=document.createTextNode("this is heading one")
+result.appendChild(data)
+var parent=document.querySelector("body")
+parent.appendChild(result)
+console.log(parent);
+*/ 
+
+
+
+
+
+
+  /*
+var result=document.createComment("this is comment data")
+console.log(result);
+document.write(result)
+
+  
+        var result=document.createTextNode("this is text data")
+        console.log(result);
+document.write(result)
+    
+var result=document.createElement("h1")
+console.log(result);
+document.write(result)
+*/
+
+
+
+
+
+
+
+
+
+        </script>
+</body>
+</html>

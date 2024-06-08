@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <script>
+    var db=[
+        {pname:"Smart Mobile",price:35000,pimage:"Product/m1.jpg",category:"mobile"},
+        {pname:"Smart Mobile",price:25000,pimage:"Product/m2.jpg",category:"mobile"},
+        {pname:"Smart Mobile",price:15000,pimage:"Product/m3.jpg",category:"mobile"},
+        {pname:"Smart Mobile",price:45000,pimage:"Product/m4.jpg",category:"mobile"},
+        {pname:"shirt",price:1400,pimage:"Product/s1.jpg",category:"man"},
+        {pname:"shirt",price:900,pimage:"Product/s2.jpg",category:"woman"},
+        {pname:"shirt",price:1200,pimage:"Product/s3.jpg",category:"kids"},
+        {pname:"shirt",price:1100,pimage:"Product/s4.jpg",category:"man"},
+        {pname:"Srmart Watch",price:6400,pimage:"Product/w1.jpg",category:"watch"},
+        
+    ]
+
+for(var i=0;i<db.length;i++){
+document.write("<h2>"+db[i].pname  +"</h2><p> Price=Rs."+db[i].price+"  Category="+db[i].category +"</p><img src="+db[i].pimage+" height='100px' width='120px'>")
+}
+
+
+
+
+        </script>
+    </div>
+</body>
+</html>

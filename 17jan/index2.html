@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+ <img src="pic5.jpg" name="myimage" height="200px" width="300px" onmouseenter="fun1()"
+ onmouseleave="fun2()">
+ <script>
+
+function fun1(){
+document.querySelector("img").src="pic3.jpg"
+}
+
+
+function fun2(){
+// document.querySelector("img").src="pic4.jpg"
+document.myimage.src="pic4.jpg"
+}
+
+
+
+
+
+
+ </script>   
+</body>
+</html>

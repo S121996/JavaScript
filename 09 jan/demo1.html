@@ -1,0 +1,37 @@
+<html >
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae beatae mollitia porro doloribus doloremque, assumenda quos dignissimos nam, rerum ducimus aliquam, dolore velit inventore commodi earum rem. Doloremque quibusdam incidunt praesentium rem! Quasi, cum optio!</p> 
+<button onclick="stp()">Stop</button>
+<script>
+/*
+function settime(){
+document.querySelector("p").style.background="orange"
+}
+
+setTimeout(settime,5000)
+*/ 
+
+
+
+var id=setTimeout(function settime(){
+document.querySelector("p").style.background="orange"
+},5000)
+
+function stp(){
+    clearTimeout(id)
+}
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>

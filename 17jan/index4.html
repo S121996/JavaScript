@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+</head>
+<body>
+   <h2>date and time</h2>
+   <h1></h1>
+   <script>
+let clock=()=>{
+    var obj=new Date()
+var h=obj.getHours()
+var m=obj.getMinutes()
+var s=obj.getSeconds()
+var mili=obj.getMilliseconds()
+var prd="AM"
+if(h==0){
+    h=12
+}
+else if(h>12){
+    h=h-12
+    prd="PM"
+}
+
+var time=`${h}:${m}:${s}:${mili}-${prd}`
+
+document.querySelector("h1").innerHTML=time 
+setTimeout(clock,100)
+
+}
+clock()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*
+    var arr=['jan','feb','mar','apr','may','june','july']
+var obj=new Date()
+var d=obj.getDate()
+var m=arr[obj.getMonth()]
+var y=obj.getFullYear()
+document.write(d,"/",m,"/",y)
+
+*/ 
+// document.write(obj)
+
+
+
+   </script>
+</body>
+</html>

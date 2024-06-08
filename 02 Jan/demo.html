@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h2>DOM</h2>
+    <p id="myp">Lorem ipsum dolor sit amet consectetur.</p>
+    <div>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>Lorem ipsum dolor sit.</p>
+        <h1 class="myclass">Lorem, ipsum dolor.</h1>
+    </div>
+    <h2>Lorem, ipsum dolor.</h2>
+    <p>Lorem, ipsum.</p>
+    <script>
+// var result=document.querySelectorAll("p")
+// var result=document.querySelectorAll(".myclass")
+var result=document.querySelectorAll("#myp")
+for(var i=0;i<result.length;i++){
+    console.log(result[i]);
+}
+
+
+
+
+  /*
+// var result=document.querySelector("p")
+// var result=document.querySelector("h2")
+// var result=document.querySelector("#myp")
+var result=document.querySelector(".myclass")
+console.log(result);
+document.write(result)
+
+
+
+
+
+
+var result=document.getElementsByClassName("myclass")
+
+console.log(result[0]);
+document.write(result[0])
+
+
+
+
+
+        var result=document.getElementsByTagName("h2")
+        // console.log(result);
+        // document.write(result)
+        for(var i=0;i<result.length;i++){
+            console.log(result[i]);
+        document.write(result[i])
+        }
+      
+var result=document.getElementById("myp")
+console.log(result);
+document.write(result)
+*/ 
+
+
+
+    </script>
+</body>
+</html>

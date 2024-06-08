@@ -1,0 +1,81 @@
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+  <!-- <form name="frm">
+    Fname:
+    <input type="text" name="n">
+    <br><br>
+    Mname:
+    <input type="text" name="mn">
+    <br><br>
+    Lname:
+    <input type="text" name="ln">
+  </form>   -->
+<form name="frm">
+    <input type="text" name="n">
+</form>
+<button onclick="fun()">click</button>
+  
+<script>
+function fun(){
+// var ptr=/^[a-z]+$/
+// var ptr=/^[a-z A-Z]+$/
+// var ptr=/^[a-z]+[A-Z]+$/
+// var ptr=/^[a-z @ _ $]+[A-Z]+$/
+var ptr=/^[a-z]+[@ _ $]+[A-Z]+$/
+if(ptr.test(document.frm.n.value))
+{
+    console.log("valid");
+}
+else{
+    console.log("not valid");
+}
+
+
+
+
+
+
+    /*
+    if(document.frm.n.value.length>5 &&document.frm.n.value.length<10)
+    {
+        console.log("valid");
+    }
+    else{
+        console.log("not valid");
+    }
+    */ 
+    // var result=document.frm.n.value 
+    // var result=document.frm.n.value.length 
+    // console.log(result);
+}
+
+
+
+
+
+
+    /*
+var result=document.frm.n 
+console.log(result);
+*/ 
+
+
+
+
+    /*
+var result=document.forms
+console.log(result);
+
+
+var result=document.frm2 
+console.log(result);
+*/ 
+
+</script>
+
+
+</body>
+</html>

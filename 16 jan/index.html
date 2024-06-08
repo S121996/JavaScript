@@ -1,0 +1,51 @@
+<html>
+<head>
+    <title>Document</title>
+    <style>
+    span{color: red;}
+    </style>
+</head>
+<body>
+  <form name="frm">
+    Name:
+    <input type="text" name="n" id="myinput">
+    <span></span>
+  </form> 
+  <input type="submit" name="sub" id="mysubmit">
+  <script>
+
+
+function validate(){
+    var ptr=/^[a-z]+$/
+    if(!ptr.test(document.frm.n.value)){
+document.querySelector("span").innerHTML="not valid"
+    }
+    else{
+        document.querySelector("span").innerHTML="" 
+    }
+  }
+document.getElementById("myinput").addEventListener("keyup",validate)
+
+
+
+    /*
+  function validate(){
+    var ptr=/^[a-z]+$/
+    if(ptr.test(document.frm.n.value)){
+document.querySelector("span").innerHTML="valid"
+    }
+    else{
+        document.querySelector("span").innerHTML="not valid" 
+    }
+  }
+document.getElementById("mysubmit").addEventListener("click",validate)
+
+*/ 
+
+
+
+
+
+  </script>
+</body>
+</html>

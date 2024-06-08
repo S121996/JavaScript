@@ -1,0 +1,81 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #b {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quasi dicta nesciunt sunt deserunt iure
+        reprehenderit ea, optio obcaecati possimus accusamus! Id voluptates temporibus nihil. Expedita tenetur pariatur
+        <span id="a">...........</span>
+        <span id="b">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium commodi impedit rem vitae
+            ipsum veniam enim, perspiciatis laudantium voluptate delectus consequatur. Quidem esse quaerat ea. Iure ab
+            rem, nam eos similique distinctio earum voluptate eligendi autem possimus. Facere dolores laudantium optio
+            nemo dolore ad placeat assumenda provident. Exercitationem atque culpa asperiores dolor excepturi, fuga
+            officiis ipsa voluptatum reprehenderit quaerat soluta animi nulla, vel error cum harum fugiat alias eius
+            maxime earum et libero nihil? Reiciendis at dolor, soluta velit veritatis laudantium sequi magnam, sed quo
+            quaerat qui animi a assumenda. Hic, voluptatum cumque ipsa assumenda voluptate nam libero deleniti,
+            consectetur iste debitis aspernatur, praesentium nostrum reiciendis odit eius. Perspiciatis laboriosam
+            commodi dolorum officiis accusantium? Unde blanditiis minus, vero odit explicabo quos excepturi tempore,
+            temporibus exercitationem praesentium sit numquam repellat quisquam veniam inventore. Veniam iusto ducimus
+            modi cum aperiam itaque cumque impedit accusamus explicabo. Quod architecto distinctio et maxime illum quis
+            possimus atque nobis officiis repudiandae! Architecto modi, quae repellendus et saepe dignissimos laborum
+            illum, libero, in omnis perferendis nemo cum voluptas. Consequatur corrupti repellat labore, cum, excepturi
+            commodi, qui culpa voluptas unde corporis debitis doloribus. Maxime, ducimus quam accusantium dicta voluptas
+            culpa praesentium voluptatum, provident atque placeat quidem itaque, vel quibusdam obcaecati eos! Molestias
+            dolor assumenda harum, doloremque, delectus eum atque, quae accusamus minima unde error fugiat blanditiis
+            suscipit iusto inventore ex recusandae reiciendis. Eaque, dicta? Libero molestias quis iste ut dolorem
+            repellat aspernatur! Repellat adipisci est quo pariatur! Suscipit sequi magni ex vitae animi unde iure
+            aliquid aut perspiciatis quidem! Minima dolore et autem ipsa tempora. Quidem cupiditate sed vero consectetur
+            dolore repellat assumenda molestiae! Reiciendis aut earum, illum ipsa veritatis optio autem fugit iure culpa
+            possimus sint fuga soluta obcaecati. A cupiditate cumque beatae consequatur iure id modi consectetur illum
+            neque maiores voluptatum in dolore voluptate, excepturi omnis quibusdam magnam ipsum! Inventore architecto
+            nulla aperiam modi laboriosam quasi mollitia ipsum dolorem adipisci laudantium voluptates quae
+            necessitatibus earum perspiciatis ipsa quo, quis pariatur voluptatibus! Distinctio perferendis eius eaque
+            voluptas animi non unde aliquam laudantium porro? Debitis facere reprehenderit fuga porro. Praesentium
+            accusamus tenetur cum odio accusantium, itaque aperiam ut, sed maiores quam, quasi repudiandae minus
+            nesciunt ab voluptates nostrum quis nam alias soluta inventore neque consectetur omnis numquam. Eum, magni
+            similique! Iste magnam iure quod quas sed, adipisci nostrum hic molestiae saepe cumque fugiat voluptatibus
+            doloribus omnis expedita quae minus voluptatem veniam consequatur voluptatum pariatur totam? Dolorum,
+            debitis. Beatae!</span>
+        <button onclick="fun()">More Data</button>
+    </p>
+    <script>
+        var data1 = document.getElementById("a")
+        var data2 = document.getElementById("b")
+        var btn = document.querySelector("button")
+
+        function fun() {
+            if (data1.style.display == "none") {
+                data1.style.display = "inline"
+                data2.style.display = "none"
+                btn.innerHTML = "More Data"
+            }
+            else {
+                data1.style.display = "none"
+                data2.style.display = "inline"
+                btn.innerHTML = "less Data"
+            }
+        }
+
+
+
+
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>

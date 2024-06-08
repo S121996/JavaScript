@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <!-- Select Year:
+    <select name="se">
+        <option disabled selected>--Year---</option>
+        <script>
+            for(var y=1910;y<=2080;y++){
+                document.write("<option>"+y+ "</option>")
+            }
+        </script>
+    </select> -->
+
+    <script>
+       
+for(var i=1;i<=5;i++){
+    document.write("<b> Outer loop-</b>"+i+"<br>")
+    for(var j=1;j<=5;j++){
+        document.write("inner loop-"+j+"<br>")
+    }
+}
+
+
+for(var i=1;i<=5;i++){
+    for(var j=1;j<=5;j++){
+        document.write(" * ")
+    }
+    document.write("<br>")
+}
+
+
+for(var i=1;i<=5;i++){
+    for(var j=1;j<=5;j++){
+        // document.write(i)
+        document.write(j)
+    }
+    document.write("<br>")
+}
+
+
+
+
+    </script>
+</body>
+</html>

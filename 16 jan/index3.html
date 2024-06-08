@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <input type="text"  name="n" onkeydown="fun1()" onkeyup="fun2()">
+    <!-- onmousedown=""
+ 
+
+    onmousemove=""
+
+
+    onmouseup=""
+    onmousewheel="" 
+   
+     
+     onmouseenter=""
+     onmouseover=""
+
+
+     onmouseleave=""
+     onmouseout="" -->
+    <script>
+        var result=document.querySelector("input")
+        function fun1(){
+            result.style.borderBottom="9px solid blue"
+        }
+        function fun2(){
+            result.style.borderBottom="9px solid red"
+            result.style.textTransform="uppercase"
+        }
+
+        /*
+function fun1(){
+    console.log("onkey down called");
+}
+
+function fun2(){
+    console.log("onkey up called");
+}
+
+function fun3(){
+    console.log("onkey press called");
+}
+*/ 
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h2>callback function</h2>
+    <script>
+        /*
+function show(a){
+    console.log("show called-",a);
+}
+
+function data(callback){
+    var a=10
+    callback(a)
+}
+data(show)
+
+
+
+
+function data(callback){
+    var a=10
+    callback(a)
+}
+data((a)=>{
+    console.log("show called-",a);
+})
+ 
+var arr=[10,20,3,40,50,60,70]
+
+   var newarr=arr.map((item)=>{
+// console.log(item*5);
+return item*2
+   })
+console.log(newarr);
+
+
+
+
+/*
+arr.forEach((item)=>{
+console.log(item);
+})
+
+arr.forEach((value,index)=>{
+console.log(value,index);
+})
+*/ 
+
+var arr=[10,50,2,4,12,22,17,19,90,88,20,21,44,78,65]
+    
+   var fdata= arr.filter((pro)=>{
+//    return pro>30
+// return pro<20
+return pro>15 && pro<25
+     })
+
+console.log(fdata);
+    </script>
+</body>
+</html>

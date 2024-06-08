@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+        function abc(a)
+        {
+            console.log(a)
+        }
+        abc()
+
+        function sum(x,y)
+        {
+            console.log(x+=+y); 
+
+        }
+        sum(3,9)
+
+        function sum1(x,y){
+            s=x+y;
+            return s;
+        }
+        let val=sum1(5,6);
+        console.log(val);
+
+        function sum2(x,y){
+            //local variables->scope
+            s=x+y;
+            console.log(y);
+            return s;
+        }
+        let om=sum2(3,4);
+        console.log(s);
+        console.log(om);
+
+    </script>
+</body>
+</html>
